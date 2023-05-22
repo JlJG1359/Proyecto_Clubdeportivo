@@ -21,3 +21,14 @@
 		 
 		  $sql = "INSERT INTO clubdeportivo (nombre, telefono, fecha_nacimiento, categoria) values ('$nombre','$telefono','$fecha','$categoria')";
 		  $resultado = $mysqli->query($sql);
+          if($resultado>0){
+			echo "<p class='alert alert-primary'>Registro completado</p>";
+			echo "<p><a href='index.php'class='btn-primary'>Regresar</a></p>";
+		  }else{
+			echo "<p>ERROR</p>";
+			echo "<p><a href='index.php'>Regresar</a></p>";
+		  }
+		?>
+
+	</body>
+</html>
