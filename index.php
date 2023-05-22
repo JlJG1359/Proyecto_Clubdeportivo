@@ -56,3 +56,25 @@ $resultado = $mysqli->query($sql);
 					</tr>
 				</thead>
 				<tbody>
+                <?php
+					  while($fila = $resultado->fetch_assoc()){
+    
+						echo    "<tr>
+									<td>$fila[nombre]</td>
+									<td>$fila[telefono]</td>
+									<td>$fila[fecha_nacimiento]</td>
+									<td>$fila[categoria]</td>
+									<td><a href='editar.php?id=$fila[id]'>Editar</a></td>			
+									<td><a href='eliminar.php?id=$fila[id]'>Eliminar</a></td>";
+					  }
+
+					?>
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+	
+	
+</body>
+</html>						
