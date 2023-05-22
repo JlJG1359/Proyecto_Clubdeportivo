@@ -10,3 +10,14 @@
 		
 		<title>Club Deportivo La Venta</title>
 	</head>
+    <body>
+		<?php
+		  require 'conexion.php';
+
+		  $nombre = $_POST['nombre'];
+		  $telefono = $_POST['telefono'];
+		  $fecha = $_POST['fecha_nacimiento'];
+		  $categoria = $_POST['categoria'];
+		 
+		  $sql = "INSERT INTO clubdeportivo (nombre, telefono, fecha_nacimiento, categoria) values ('$nombre','$telefono','$fecha','$categoria')";
+		  $resultado = $mysqli->query($sql);
