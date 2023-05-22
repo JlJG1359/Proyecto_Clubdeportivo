@@ -29,3 +29,30 @@ $resultado = $mysqli->query($sql);
     			$(tabla).DataTable();
 			} );
 		</script>
+
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1>Socios</h1>
+			</div>
+			<br>
+			
+			<div class="row">
+				<a href="registrar.php" class="btn-primary">Registrar</a>
+			</div>
+			<br>
+			<br>
+			
+			<table id="tabla" class="display" style="width:100%">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Telefono</th>
+						<th>Fecha de nacimiento</th>
+						<th>Categoría</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
