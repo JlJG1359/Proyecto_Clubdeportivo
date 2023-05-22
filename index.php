@@ -1,3 +1,6 @@
-<p>Hola</p>
+<?php
 
-<p>Buenas tardes</p>
+require "conexion.php";
+$sql = "SELECT * FROM clubdeportivo";
+$resultado = $mysqli->query($sql);
+?>
