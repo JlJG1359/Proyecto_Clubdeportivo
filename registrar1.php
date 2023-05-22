@@ -15,3 +15,18 @@
 			<div class="row">
 				<h1>Socios</h1>
 			</div>
+            <div class="row">
+				<div class="col-md-8">
+					<!-- Completar atributos de form -->
+					<form action="registrar2.php" id="registro" name="registro" autocomplete="off" method="post">
+						<div class="form-group">
+							<!-- Nombre -->
+							<p>Nombre</p>
+							<input type="text" name="nombre" id="nombre" maxlength="30" class="form-control" placeholder="Introduzca su nombre" required>
+						</div>
+						
+						<div class="form-group">
+							<!-- Teléfono -->
+							<p>Telefono</p>
+							<input type="number" name="telefono" id="telefono" maxlength="30" class="form-control" placeholder="Introduzca su numero" required>
+						</div>
