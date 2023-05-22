@@ -30,3 +30,17 @@
 							<p>Telefono</p>
 							<input type="number" name="telefono" id="telefono" maxlength="30" class="form-control" placeholder="Introduzca su numero" required>
 						</div>
+                        <div class="form-group">
+							<!-- Fecha nacimiento -->
+							<p>Fecha Nacimiento</p>
+							<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" maxlength="30" class="form-control" required>
+						</div>
+						
+						<div class="form-group">
+							<!-- Categoría -->
+							<p>Categoria</p>
+							<select name="categoria" id="categoria" class="custom-select">
+							<option selected>AMATEUR</option>
+							<option>PROFESIONAL</option>
+							</select>
+						</div>
