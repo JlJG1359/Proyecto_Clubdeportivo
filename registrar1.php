@@ -44,3 +44,18 @@
 							<option>PROFESIONAL</option>
 							</select>
 						</div>
+                        <div class="form-group">
+							<!-- Registrar -->
+							<input type="submit" class="btn-primary" value="Registrar">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.min.js" ></script>
+		<script src="js/bootstrap.min.js" ></script>
+	</body>
+</html>				
